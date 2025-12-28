@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="testConfig" class="utils.config.TestConfig">
+        <property name="baseUrl" value="https://www.saucedemo.com/"/>
+        <property name="password" value="secret_sauce"/>
+        <property name="standardUser" value="standard_user"/>
+        <property name="lockedOutUser" value="locked_out_user"/>
+        <property name="problemUser" value="problem_user"/>
+        <property name="performanceUser" value="performance_glitch_user"/>
+        <property name="errorUser" value="error_user"/>
+        <property name="visualUser" value="visual_user"/>
+    </bean>
+
+</beans>
